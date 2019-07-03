@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Coustard&display=swap');
+
+.area-runner .participantes {
+  position: relative;
+	text-align: center;
+  font-family: 'Arvo', serif;
+  font-size: 14px;
+	width: 247px;
+  height: 176px;
+	color: white;
+  cursor: default;
+  margin: 10px;
+	background: linear-gradient(100deg, rgba(90, 90, 90, .4), rgb(90, 90, 90), rgba(90, 90, 90, .4));
+}
+
+.area-runner .participantes thead tr,
+.area-runner .participantes .tr-base {
+  background-color: #222;
+}
+
+.area-runner .participantes td {
+  position: relative;
+  width: 50%;
+}
+
+.area-runner .participantes tr {
+  position: relative;
+}
+
+.area-runner .participantes .td-principal {
+  height: 110px;
+}
+
+.area-runner .participantes .td-menor {
+  height: 27px;
+}
+
+.area-runner .aproveitamento {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.area-runner .ligar {
+	background: linear-gradient(to bottom, #909090, white);
+}
+
+.area-runner .grau {
+	position: relative;
+  width: 100%;
+}
+
+.area-runner .quebra {
+	position: absolute;
+	left: 1px;
+	top: 1px;
+}
+
+.area-runner .cambio {
+	position: absolute;
+	left: 24%;
+	top: 20%;
+}
+
+.area-runner .categoria {
+	position: absolute;
+	bottom: 1px;
+	left: 1px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.area-runner .nitro {
+	position: absolute;
+	width: 14px;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.area-runner .velocimetro {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.area-runner .div-ponteiro {
+  position: absolute;
+  z-index: 1;
+  top: 41px;
+  left: 25px;
+}
+
+.area-runner .ponteiro {
+  transform: translate(0px, 0px) rotate(0deg);
+  width: 160%;
+}
+
+.area-runner .barras-nitros {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 14px;
+	height: 100%;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.area-runner .barras-nitros img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+
+.area-runner .efeito-barra-nitro {
+	width: 14px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: linear-gradient(to top, blue, yellow, red);
+	border-radius: 10px;
+  display: none;
+}
+
+.area-runner .nomes-modelos span {
+	position: absolute;
+	font-size: 17px;
+	right: 0px;
+	color: red;
+	opacity: .7;
+}
+
+
+.area-runner .grau span {
+	position: absolute;
+	background-color: springgreen;
+	left: 0px;
+	width: 0%;
+	font-size: 7px;
+	text-align: center;
+	height: 4px;
+	border: 0.2px	dashed black;
+}
+
+.area-runner .velocidade {
+	position: absolute;
+	bottom: 6px;
+	z-index: 1;
+	left: 23%;
+	top: 75%;
+	font-size: 15px;
+	color: black;
+
+  font-family: 'Coustard', serif;
+}
+
+.area-runner .info-rapida {
+	display: none;
+  text-align: left;
+	position: absolute;
+	border: 1px solid black;
+  width: 155px;
+	padding: 6px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px white;
+	background: linear-gradient(100deg, rgba(90, 90, 90, .7), rgb(90, 90, 90), rgba(90, 90, 90, .7));
+	color: white;
+  font-family: 'Coustard', serif;
+
+  z-index: 10;
+}

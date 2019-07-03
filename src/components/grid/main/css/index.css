@@ -1,0 +1,43 @@
+.header {
+  grid-area: header;
+}
+
+.article {
+  grid-area: article;
+
+  background: rgba(241, 240, 240, 0.7);
+  box-shadow: 1px 1px 60px #AAA;
+
+  transition: all 1s ease-in;
+}
+
+.article:hover {
+  box-shadow: 1px 1px 60px #fff;
+}
+
+@media (min-width: 769px) {
+  .main {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+    'header'
+    'article';
+  }
+
+}
+
+@media (max-width: 768px) {
+  .main {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+    'header'
+    'article';
+  }
+}

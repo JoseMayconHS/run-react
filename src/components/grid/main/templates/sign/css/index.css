@@ -1,0 +1,70 @@
+.content-sign {
+  display: flex;
+  justify-content: center;
+}
+
+.area-form {
+  padding: 30px;
+  max-width: 500px;
+  width: 99vw;
+  background: #f5f5f5;
+  border-radius: 20px;
+}
+
+.area-form .esqueci-senha {
+  color: blue;
+  cursor: pointer;
+}
+
+.area-form .area-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.area-header .message {
+  padding: 7px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: rgba(228, 228, 17, 0.78);
+  border: 1px solid black;
+}
+
+.area-form .title-form {
+  font-size: 30px;
+}
+
+.area-input {
+  position: relative;
+  margin: 30px;
+}
+
+.area-input .input {
+  padding: 12px;
+  width: 400px;
+  border-radius: 4px;
+  border: 1px solid #0004;
+  max-width: 98%;
+}
+
+.area-input label {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  font-size: 20px;
+
+  transition: all .3s linear;
+}
+
+.area-input .input:focus ~ label,
+.area-input .input:valid ~ label {
+  top: -20px;
+}
+
+.area-submit {
+  margin-bottom: 10px;
+}
+
+.input-danger {
+  border: 1px solid #f009 !important;
+}

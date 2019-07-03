@@ -1,0 +1,39 @@
+
+.main {
+  grid-area: main;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.app {
+  height: 100vh;
+  max-width: 1500px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:50px 1fr 80px;
+  grid-template-areas:
+    'nav'
+    'main'
+    'footer';
+}
+
+@media (max-width: 768px) {
+  .app {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:1fr 80px;
+    grid-template-areas:
+      'main'
+      'footer';
+  }
+}

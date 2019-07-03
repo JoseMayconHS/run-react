@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Bree Serif', serif;
+}
+
+.footer .desc {
+  margin-bottom: 10px;
+}
+
+.footer .redes {
+  display: flex;
+  width: 100%;
+  max-width: 200px;
+  justify-content: space-around;
+}
