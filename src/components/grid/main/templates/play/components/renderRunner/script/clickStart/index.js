@@ -2,6 +2,7 @@ import cambio_desligado from '../../imagens/importants/cambio_desligado.png'
 
 export default function () {
   document.querySelector('.form-definir-participantes').style.pointerEvents = 'none'
+  document.querySelector('.nav').style.pointerEvents = 'none'
 
   document.querySelectorAll('.nitro').forEach(div => div.style.display = 'block')
 
