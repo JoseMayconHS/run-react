@@ -1,0 +1,22 @@
+import React from 'react'
+
+import './css/index.css'
+
+import Main from '../..'
+import Card from './components/card'
+
+export default () =>
+  <Main title='Início' subtitle='Como o site funciona'>
+    <div className='content-home'>
+      <Card title='Sobre as peças' link='/parts' linkLabel='Tabela de peças' clickLink='nav-parts'>
+        <p>Como peças para um carro, nós temos motores, transmissões, rodas, cilindros e proteção.</p>
+        <p>Os mesmos podem auxiliar na velocidade, aceleração, freio, turbo e resistência!</p>
+      </Card>
+      <Card title='Sobre o jogo' link='/play' linkLabel='Jogar' clickLink='nav-game'>
+        <p>No jogo você pode combinar qualquer piloto com qualquer carro e ver quem ganha!</p>
+        <p>- Primeiro você precisa escolher os pilotos e carros, por padrão já ficam dois prontos para a corrida!</p>
+        <p>- No minino são dois participantes e no máximo doze!</p>
+        <p>- Não podem haver pilotos repetidos!</p>
+      </Card>
+    </div>
+  </Main>

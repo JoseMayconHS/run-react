@@ -6,10 +6,10 @@ import 'font-awesome/css/font-awesome.min.css'
 
 import './css/index.css'
 
-import Nav from '../components/grid/nav'
-import Footer from '../components/grid/footer'
+import Nav from '../components/nav'
+import Footer from '../components/footer'
 
-export default props =>
+export default () =>
   <HashRouter>
     <section className='app'>
         <Nav />

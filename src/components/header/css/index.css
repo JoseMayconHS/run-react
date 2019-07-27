@@ -1,0 +1,28 @@
+.header {
+  text-align: center;
+  position: relative;
+}
+
+.header .ala {
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+  padding: 10px;
+  background: #222;
+  border: 1px solid #fff;
+  color: whitesmoke;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.header .desc {
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

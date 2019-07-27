@@ -1,0 +1,422 @@
+{
+  "pilots": [
+    ["Letty", "F", "EUA", 41, "letty"],
+    ["Bryan", "M", "EUA", 48, "bryan"],
+    ["Dominic", "M", "EUA", 48, "don"],
+    ["Mia", "F", "EUA", 33, "mia"],
+    ["Rome", "M", "EUA", 44, "rome"],
+    ["10k", "M", "EUA", 13, "10k"],
+    ["Kassandra", "F", "EUA", 9, "kassandra"],
+    ["Eddy", "F", "EUA", 15, "eddy"],
+    ["Dock", "M", "EUA", 22, "dock"],
+    ["Murphy", "M", "EUA", 25, "murphy"],
+    ["Warren", "F", "EUA", 27, "warren"],
+    ["Alerquina", "F", "EUA", 29, "alerquina"],
+    ["Viuva Negra", "F", "EUA", 33, "viuvanegra"],
+    ["Aquaman", "M", "EUA", 19, "aquaman"],
+    ["Capítão America", "M", "EUA", 30, "capitaoamerica"],
+    ["Tonny Stark", "M", "EUA", 35, "homemdeferro"],
+    ["Super Man", "M", "EUA", 15, "superman"],
+    ["Batman", "M", "EUA", 44, "batman"],
+    ["Maravilha", "F", "EUA", 21, "mulhermaravilha"],
+    ["Robin", "M", "EUA", 18, "robin"],
+    ["The Rock", "M", "EUA", 38, "therock"],
+    ["Ayrton Senna", "M", "BRA", 50, "ayrton"],
+    ["Vettel", "M", "EUA", 45, "vettel"],
+    ["Hamilton", "M", "EUA", 48, "hamilton"],
+    ["Felipe Massa", "M", "BRA", 43, "massa"]
+  ],
+  "cars": [
+    ["Pegeot", { "engine": 0, "transmition": 1, "whells": 6, "cylinder": 2, "protection": 1 }],
+    ["Golf", { "engine": 1, "transmition": 2, "whells": 1, "cylinder": 6, "protection": 2 }],
+    ["Brasília", { "engine": 0, "transmition": 4, "whells": 0, "cylinder": 1, "protection": 2 }],
+    ["Ford", { "engine": 2, "transmition": 2, "whells": 0, "cylinder": 0, "protection": 7 }],
+    ["Fusca", { "engine": 1, "transmition": 0, "whells": 6, "cylinder": 8, "protection": 4 }],
+    ["Uno", { "engine": 0, "transmition": 6, "whells": 4, "cylinder": 0, "protection": 2 }],
+    ["Land Hover", { "engine": 10, "transmition": 2, "whells": 1, "cylinder": 9, "protection": 6 }],
+    ["Nissan", { "engine": 16, "transmition": 4, "whells": 0, "cylinder": 1, "protection": 2 }],
+    ["Camaro", { "engine": 16, "transmition": 5, "whells": 3, "cylinder": 1, "protection": 3 }],
+    ["BMW", { "engine": 17, "transmition": 3, "whells": 1, "cylinder": 5, "protection": 1 }],
+    ["Honda Civic", { "engine": 7, "transmition": 1, "whells": 6, "cylinder": 2, "protection": 1 }],
+    ["Mustang", { "engine": 19, "transmition": 2, "whells": 1, "cylinder": 6, "protection": 2 }],
+    ["Nissan 360z", { "engine": 19, "transmition": 4, "whells": 0, "cylinder": 1, "protection": 2 }],
+    ["Lamborghini", { "engine": 19, "transmition": 2, "whells": 0, "cylinder": 0, "protection": 7 }],
+    ["Porshe", { "engine": 17, "transmition": 0, "whells": 4, "cylinder": 8, "protection": 4 }],
+    ["Aston Martin", { "engine": 14, "transmition": 6, "whells": 4, "cylinder": 0, "protection": 2 }],
+    ["Dodge", { "engine": 13, "transmition": 2, "whells": 1, "cylinder": 9, "protection": 6 }],
+    ["Ferrari", { "engine": 18, "transmition": 4, "whells": 0, "cylinder": 1, "protection": 4 }],
+    ["Volvo", { "engine": 9, "transmition": 5, "whells": 6, "cylinder": 1, "protection": 3 }],
+    ["Rolls Royce", { "engine": 10, "transmition": 3, "whells": 1, "cylinder": 5, "protection": 1 }],
+    ["GTR-V8", { "engine": 18, "transmition": 0, "whells": 6, "cylinder": 2, "protection": 7 }],
+    ["Mercedes-Benz", { "engine": 16, "transmition": 2, "whells": 1, "cylinder": 6, "protection": 2 }],
+    ["Citroen", { "engine": 6, "transmition": 4, "whells": 0, "cylinder": 1, "protection": 2 }],
+    ["Aventador", { "engine": 19, "transmition": 2, "whells": 3, "cylinder": 0, "protection": 7 }],
+    ["Veneno", { "engine": 19, "transmition": 0, "whells": 4, "cylinder": 8, "protection": 4 }],
+    ["Bugatti", { "engine": 19, "transmition": 6, "whells": 4, "cylinder": 6, "protection": 2 }],
+    ["Audi", { "engine": 14, "transmition": 2, "whells": 6, "cylinder": 9, "protection": 6 }],
+    ["Jaguar", { "engine": 15, "transmition": 4, "whells": 0, "cylinder": 1, "protection": 1 }],
+    ["Bentley", { "engine": 11, "transmition": 5, "whells": 1, "cylinder": 1, "protection": 3 }],
+    ["Hilux", { "engine": 5, "transmition": 3, "whells": 1, "cylinder": 5, "protection": 1 }]
+  ],
+  "parts": {
+    "engines": [
+        {
+        "name": "v1 Pure",
+        "exchange": 4,
+        "exchange rates": [0.009, 0.005, 0.0006, 0.0003],
+        "speed": 140,
+        "acceleration": 33,
+        "resistance": 10,
+        "turbo": 2
+      },
+      {
+        "name": "v2 Pure",
+        "exchange": 4,
+        "exchange rates": [0.009, 0.005, 0.001, 0.0007],
+        "speed": 151,
+        "acceleration": 44,
+        "resistance": 13,
+        "turbo": 5
+      },
+      {
+        "name": "v3 Pure",
+        "exchange": 6,
+        "exchange rates": [0.009, 0.007, 0.004, 0.0009, 0.0007, 0.0004],
+        "speed": 172,
+        "acceleration": 61,
+        "resistance": 22,
+        "turbo": 7
+      },
+      {
+        "name": "v4 Pure",
+        "exchange": 8,
+        "exchange rates": [0.01, 0.008, 0.006, 0.004, 0.001, 0.0008, 0.0006, 0.0004],
+        "speed": 188,
+        "acceleration": 70,
+        "resistance": 24,
+        "turbo": 9
+      },
+      {
+        "name": "v5 Pure",
+        "exchange": 6,
+        "exchange rates": [0.009, 0.005, 0.001, 0.0008, 0.0006],
+        "speed": 199,
+        "acceleration": 77,
+        "resistance": 26,
+        "turbo": 10
+      },
+      {
+        "name": "v1 Super",
+        "exchange": 4,
+        "exchange rates": [0.009, 0.005, 0.001, 0.0006],
+        "speed": 155,
+        "acceleration": 31,
+        "resistance": 9,
+        "turbo": 3
+      },
+      {
+        "name": "v2 Super",
+        "exchange": 5,
+        "exchange rates": [0.01, 0.005, 0.001, 0.0007, 0.0003],
+        "speed": 165,
+        "acceleration": 40,
+        "resistance": 12,
+        "turbo": 6
+      },
+      {
+        "name": "v3 Super",
+        "exchange": 5,
+        "exchange rates": [0.008, 0.005, 0.001, 0.0007],
+        "speed": 189,
+        "acceleration": 55,
+        "resistance": 15,
+        "turbo": 8
+      },
+      {
+        "name": "v4 Super",
+        "exchange": 7,
+        "exchange rates": [0.02, 0.009, 0.005, 0.002, 0.0008, 0.005, 0.0003],
+        "speed": 210,
+        "acceleration": 66,
+        "resistance": 18,
+        "turbo": 10
+      },
+      {
+        "name": "v5 Super",
+        "exchange": 7,
+        "exchange rates": [0.02, 0.009, 0.007, 0.005, 0.001, 0.007, 0.0004],
+        "speed": 230,
+        "acceleration": 76,
+        "resistance": 20,
+        "turbo": 12
+      },
+      {
+        "name": "v1 Flex",
+        "exchange": 4,
+        "exchange rates": [0.01, 0.005, 0.0008, 0.0005],
+        "speed": 140,
+        "acceleration": 50,
+        "resistance": 12,
+        "turbo": 2
+      },
+      {
+        "name": "v2 Flex",
+        "exchange": 5,
+        "exchange rates": [0.01, 0.005, 0.001, 0.007, 0.0004],
+        "speed": 161,
+        "acceleration": 50,
+        "resistance": 14,
+        "turbo": 5
+      },
+      {
+        "name": "v3 Flex",
+        "exchange": 6,
+        "exchange rates": [0.02, 0.008, 0.004, 0.0009, 0.0007, 0.0005],
+        "speed": 185,
+        "acceleration": 50,
+        "resistance": 16,
+        "turbo": 7
+      },
+      {
+        "name": "v4 Flex",
+        "exchange": 7,
+        "exchange rates": [0.01, 0.008, 0.004, 0.001, 0.0009, 0.0007, 0.0005],
+        "speed": 197,
+        "acceleration": 50,
+        "resistance": 18,
+        "turbo": 8
+      },
+      {
+        "name": "v5 Flex",
+        "exchange": 8,
+        "exchange rates": [0.03, 0.009, 0.007, 0.003, 0.0009, 0.0007, 0.0006, 0.0005],
+        "speed": 211,
+        "acceleration": 70,
+        "resistance": 20,
+        "turbo": 9
+      },
+      {
+        "name": "v1 Turbo",
+        "exchange": 5,
+        "exchange rates": [0.01, 0.008, 0.004, 0.0009, 0.0005],
+        "speed": 184,
+        "acceleration": 51,
+        "resistance": 13,
+        "turbo": 3
+      },
+      {
+        "name": "v2 Turbo",
+        "exchange": 6,
+        "exchange rates": [0.02, 0.008, 0.005, 0.001, 0.0009, 0.0006],
+        "speed": 192,
+        "acceleration": 57,
+        "resistance": 7,
+        "turbo": 5
+      },
+      {
+        "name": "v3 Turbo",
+        "exchange": 6,
+        "exchange rates": [0.02, 0.009, 0.004, 0.0009, 0.0007, 0.0004],
+        "speed": 210,
+        "acceleration": 61,
+        "resistance": 5,
+        "turbo": 7
+      },
+      {
+        "name": "v4 Turbo",
+        "exchange": 8,
+        "exchange rates": [0.04, 0.01, 0.007, 0.005, 0.003, 0.0009, 0.0006, 0.0004],
+        "speed": 239,
+        "acceleration": 73,
+        "resistance": 8,
+        "turbo": 9
+      },
+      {
+        "name": "v5 Turbo",
+        "exchange": 5,
+        "exchange rates": [0.04, 0.009, 0.004, 0.0009, 0.0007],
+        "speed": 250,
+        "acceleration": 80,
+        "resistance": 3,
+        "turbo": 11
+      }
+    ],
+    "transmissions": [
+      {
+        "name": "Kit Flex",
+        "acceleration": 30,
+        "speed": 25,
+        "turbo": 1,
+        "resistance": 2
+      },
+      {
+        "name": "Kit Off",
+        "acceleration": 45,
+        "speed": 20,
+        "turbo": 3,
+        "resistance": 4
+      },
+      {
+        "name": "Kit Fast",
+        "acceleration": 60,
+        "speed": 25,
+        "turbo": 1,
+        "resistance": 2
+      },
+      {
+        "name": "Kit Bit",
+        "acceleration": 26,
+        "speed": 19,
+        "turbo": 3,
+        "resistance": 9
+      },
+      {
+        "name": "Kit Auto",
+        "acceleration": 40,
+        "speed": 36,
+        "turbo": 1,
+        "resistance": 12
+      },
+      {
+        "name": "Kit Lux",
+        "acceleration": 50,
+        "speed": 30,
+        "turbo": 5,
+        "resistance": 15
+      },
+      {
+        "name": "Kit Flash",
+        "acceleration": 30,
+        "speed": 45,
+        "turbo": 1,
+        "resistance": 10
+      }
+    ],
+    "whells": [
+      {
+        "name": "Sports",
+        "speed": 29,
+        "acceleration": 13,
+        "brake": 7
+      },
+      {
+        "name": "Off Road",
+        "speed": 23,
+        "acceleration": 20,
+        "brake": 9
+      },
+      {
+        "name": "Non-stick",
+        "speed": 30,
+        "acceleration": 35,
+        "brake": 13
+      },
+      {
+        "name": "Smooth",
+        "speed": 24,
+        "acceleration": 35,
+        "brake": 4
+      },
+      {
+        "name": "Soft",
+        "speed": 39,
+        "acceleration": 28,
+        "brake": 5
+      },
+      {
+        "name": "Medium Soft",
+        "speed": 33,
+        "acceleration": 31,
+        "brake": 3
+      },
+      {
+        "name": "Super Soft",
+        "speed": 29,
+        "acceleration": 34,
+        "brake": 1
+      }
+    ],
+    "cylinders": [
+      {
+        "name": "Cylinder 0.7",
+        "turbo": 11,
+        "speed": 20,
+        "acceleration": 8,
+        "resistance": 4
+      },
+      {
+        "name": "Cylinder 1.0",
+        "turbo": 13,
+        "speed": 17,
+        "acceleration": 5,
+        "resistance": 3
+      },
+      {
+        "name": "Cylinder 1.3",
+        "turbo": 15,
+        "speed": 18,
+        "acceleration": 5,
+        "resistance": 5
+      },
+      {
+        "name": "Cylinder 1.5",
+        "turbo": 18,
+        "speed": 17,
+        "acceleration": 11,
+        "resistance": 9
+      },
+      {
+        "name": "Cylinder 1.7",
+        "turbo": 19,
+        "speed": 19,
+        "acceleration": 9,
+        "resistance": 10
+      },
+      {
+        "name": "Cylinder 2.0",
+        "turbo": 19,
+        "speed": 21,
+        "acceleration": 7,
+        "resistance": 5
+      },
+      {
+        "name": "Cylinder 2.5",
+        "turbo": 21,
+        "speed": 25,
+        "acceleration": 10,
+        "resistance": 3
+      },
+      {
+        "name": "Cylinder 2.7",
+        "turbo": 23,
+        "speed": 27,
+        "acceleration": 12,
+        "resistance": 2
+      },
+      {
+        "name": "Cylinder 3.0",
+        "turbo": 26,
+        "speed": 30,
+        "acceleration": 15,
+        "resistance": 1
+      },
+      {
+        "name": "Cylinder 3.1",
+        "turbo": 28,
+        "speed": 30,
+        "acceleration": 17,
+        "resistance": 0
+      }
+    ],
+    "protections": [
+      { "name": "None","resistance": 0 },
+      { "name": "Cooling","resistance": 10 },
+      { "name": "Ice","resistance": 11 },
+      { "name": "Steel","resistance": 13 },
+      { "name": "Metal","resistance": 11 },
+      { "name": "Iron","resistance": 16 },
+      { "name": "Hard Stone","resistance": 14 },
+      { "name": "Water","resistance": 15 }
+    ]
+  }
+}

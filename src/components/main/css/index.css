@@ -1,0 +1,39 @@
+.header {
+  grid-area: header;
+}
+
+.article {
+  grid-area: article;
+
+  background: #2225;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+
+@media (min-width: 769px) {
+  .main {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+    'header'
+    'article';
+  }
+
+}
+
+@media (max-width: 768px) {
+  .main {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+    'header'
+    'article';
+  }
+}
