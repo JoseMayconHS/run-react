@@ -20,6 +20,7 @@ import Runner from './components/renderRunner'
 const initialState = {
   equals: false,
   message: 'Escolha os participantes',
+  labelBtnSubmit: 'Próximo passo!',
   started: false,
   random: false,
   runner: false,
@@ -114,7 +115,7 @@ export default class Play extends Component {
   }
 
   runStop = () => {
-    this.setState({ started: !this.state.started })
+    this.setState({ started: !this.state.started, labelBtnSubmit: !this.state.started? 'Voltar à corrida!': 'Próximo passo!' })
     return true
   }
 
@@ -134,7 +135,7 @@ export default class Play extends Component {
 
     let randomPilots = Math.ceil(Math.random() * 12)
     if (randomPilots < 2) randomPilots = 2
-    this.setState({ random: true, pilots: randomPilots, equals: false })
+    this.setState({ random: true, pilots: randomPilots, equals: false, message: 'Escolha os participantes' })
   }
 
   renderSelect = () => {
@@ -171,7 +172,7 @@ export default class Play extends Component {
 
   render() {
     return (
-      <Main title='Jogo' subtitle='Aproveite o jogo'>
+      <Main title='Jogo' subtitle='Aproveite o jogo' className='scroll'>
         <div className='content-play'>
           <div className='tittle-content'>
             <span className='legend-content'>Corrida</span>
@@ -193,7 +194,7 @@ export default class Play extends Component {
             <div className='area-submit-content-play'>
               <div>{this.state.message}</div>
               <div>
-                <input type='button' className='btn-second' value='Aleatório' onClick={this.setRandom} /> <input type='submit' className='btn-primary' value='Próximo passo' />
+                <input type='button' className='btn-second' value='Aleatório' onClick={this.setRandom} /> <input type='submit' className='btn-primary' value={this.state.labelBtnSubmit} />
               </div>
             </div>
           </form>

@@ -5,15 +5,25 @@ import data from '../../../../data/index.json'
 export function Th({ list }) {
   if (list === 'pilots') {
     return (
-      <tr>
-        <th>#</th><th>Nome</th><th>Gênero</th><th>Pais</th><th>Nvl</th>
-      </tr>
+      <>
+        <tr>
+          <th colSpan='5'>Pilotos</th>
+        </tr>
+        <tr>
+          <th>#</th><th>Nome</th><th>Gênero</th><th>Pais</th><th>Nvl</th>
+        </tr>
+      </>
     )
   } else {
     return (
-      <tr>
-        <th>#</th><th>Modelo</th><th>Motor</th><th>Transmissão</th><th>Rodas</th><th>Cilindro</th><th>Proteção</th>
-      </tr>
+      <>
+        <tr>
+          <th colSpan='7'>Carros</th>
+        </tr>
+        <tr>
+          <th>#</th><th>Modelo</th><th>Motor</th><th>Transmissão</th><th>Rodas</th><th>Cilindro</th><th>Proteção</th>
+        </tr>
+      </>
     )
   }
 }
