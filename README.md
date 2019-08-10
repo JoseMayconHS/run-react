@@ -1,2 +1,2 @@
-# Run-Front-end
-Project developed with the library React - (development state)
+# Run-React
+Projeto somente client-side feito em React!
