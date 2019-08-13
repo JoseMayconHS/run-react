@@ -64,10 +64,10 @@ export default ({ index, valueC, valueP }) =>
     <div className='select'>
       <span className='title-select'>Piloto </span>
       <select id={`p${index}`}>
-        <optgroup label='Man'>
+        <optgroup label='Homens'>
           {renderOption('pilots', 'M', null, valueP)}
         </optgroup>
-        <optgroup label='Women'>
+        <optgroup label='Mulheres'>
           {renderOption('pilots', 'F', null, valueP)}
         </optgroup>
       </select>

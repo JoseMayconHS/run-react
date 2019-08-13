@@ -25,7 +25,6 @@ const initialState = {
   random: false,
   runner: false,
   pilots: 2,
-  selects: [],
   keys: {
     cars: [0, 1],
     pilots: [8, 11]
@@ -148,13 +147,13 @@ export default class Play extends Component {
           const indiceCar = Math.ceil(Math.random() * (data.cars.length - 1))
           const indicePilot = Math.ceil(Math.random() * (data.pilots.length - 1))
 
-          if (p < 12) selects.push(<Select key={p} index={p} valueC={indiceCar} valueP={indicePilot} />)
+          selects.push(<Select key={p} index={p} valueC={indiceCar} valueP={indicePilot} />)
         }
 
       } else {
 
         for (let s = 0; s < this.state.pilots; s++) {
-          if (s < 12) selects.push(<Select key={s} index={s} valueC={+this.state.keys.cars[s]} valueP={+this.state.keys.pilots[s]} />)
+          selects.push(<Select key={s} index={s} valueC={+this.state.keys.cars[s]} valueP={+this.state.keys.pilots[s]} />)
         }
 
       }
@@ -162,7 +161,7 @@ export default class Play extends Component {
     } else {
 
       for (let p = 0; p < this.state.pilots; p++) {
-        if (p < 12) selects.push(<Select key={p} index={p} valueC={+this.state.keys.cars[p]} valueP={+this.state.keys.pilots[p]} />)
+        selects.push(<Select key={p} index={p} valueC={+this.state.keys.cars[p]} valueP={+this.state.keys.pilots[p]} />)
       }
 
     }
@@ -185,7 +184,7 @@ export default class Play extends Component {
           <form className='form-definir-participantes' onSubmit={this.run}>
             <div className='area-qtd-select'>
               <div className='sub-area-qtd-select'>
-                  Participantes <input type='number' min='2' max='12' onChange={this.updateSelects} />
+                Participantes <input type='number' min='2' max='12' onChange={this.updateSelects} />
               </div>
             </div>
             <div className='area-selects'>
